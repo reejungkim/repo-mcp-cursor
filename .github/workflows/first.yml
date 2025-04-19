@@ -1,2 +1,26 @@
-name : First workflow
-on : push
+name: Daily Update Workflow
+
+on:
+  schedule:
+    - cron: '0 22 * * *'  # 7:00 AM KST (22:00 UTC)
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Update file
+        run: |
+          DATE=$(TZ='Asia/Seoul' date +'%Y-%m-%d')
+          if [[ "$DATE" < "2024-05-01" ]]; then
+            echo "# Daily Update
+            Updated: $DATE 07:00 KST" > daily_update.md
+            
+            git config --local user.email "actions@github.com"
+            git config --local user.name "GitHub Actions"
+            git add daily_update.md
+            git commit -m "Daily update: $DATE"
+            git push
+          fi

@@ -1,28 +1,33 @@
 # repo-mcp-cursor
 
-Repository created using GitHub MCP in Cursor
+This repository was created using Cursor IDE.
 
-## Description
+## MCP (Machine Coding Protocol) Connections
 
-This repository demonstrates the integration between Cursor IDE and GitHub using the MCP (Machine Coding Protocol) functionality. It serves as a testing ground for various GitHub operations and automated repository management features.
+This repository is configured with the following MCP server connections in Cursor:
 
-## Features
+1. GitHub MCP
+   - Purpose: GitHub integration and repository management
+   - Service: [GitHub API](https://docs.github.com/en/rest)
+   - Repository: [reejungkim/repo-mcp-cursor](https://github.com/reejungkim/repo-mcp-cursor)
+   - Features: Repository creation, management, and version control
 
-- GitHub API Integration
-- Automated repository management
-- Cursor IDE compatibility
+2. File System MCP
+   - Purpose: Local file system access and management
+   - Features: File reading, writing, and system operations
+   - OS: Darwin 23.6.0
 
-## Getting Started
+3. Naver Search MCP
+   - Purpose: Naver search integration
+   - Service: [Naver Search API](https://developers.naver.com/docs/search/overview/)
+   - Features: Search functionality and data retrieval from Naver
+   - Region: Korea
 
-### Installation
+## About
 
-Clone the repository:
-```bash
-git clone https://github.com/reejungkim/repo-mcp-cursor.git
-```
+This is a public repository created by Ree Jung Kim. Feel free to explore and contribute!
 
 ## Contact
 
-Ree Jung Kim - [GitHub Profile](https://github.com/reejungkim)
-
-Project Link: [https://github.com/reejungkim/repo-mcp-cursor](https://github.com/reejungkim/repo-mcp-cursor)
+- GitHub: [@reejungkim](https://github.com/reejungkim)
+- Website: [reejungkim.github.io](https://reejungkim.github.io/)
